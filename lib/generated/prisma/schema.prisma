@@ -86,7 +86,7 @@ model IndustryInsight {
 
   // Industry trends
   growthRate  Float // Industry growth rate
-  demandLevel DemandLevel // "High", "Medium", "Low"
+  demandLevel DemandLevel // "HIGH", "MEDIUM", "LOW"
   topSkills   String[] // Most in-demand skills
 
   // Market conditions
