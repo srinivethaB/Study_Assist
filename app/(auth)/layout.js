@@ -1,7 +1,15 @@
-import React from 'react'
+import { Inter } from 'next/font/google';
 
-const AuthLayout = ({ children }) => {
-    return <div className="flex justify-center pt-40">{children}</div>;
-  };
-  
-  export default AuthLayout;
+const inter = Inter({ subsets: ['latin'] });
+
+export const metadata = {
+  ...
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body className={inter.className}>{children}</body>
+    </html>
+  );
+}
